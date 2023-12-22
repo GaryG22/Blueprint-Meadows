@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from "./Navbar"
+import HomePage from "./homePage"
+import Section2 from "./Section2"
 
 function App (){
  return (
-  <Navbar />
+    <>
+    <HomePage />
+    <Section2 />
+    
+    </>
  )
 }
 

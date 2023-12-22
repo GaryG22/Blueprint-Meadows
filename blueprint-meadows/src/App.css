@@ -1,25 +1,45 @@
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+html {
+  height: 100vh;
   overflow: hidden;
-  background-color: #c0c0c0;
 }
-
-li {
-  float: left;
+body{
+  width: 100vw;
+  height: 100vh;
+  background: #272727;
+  margin: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+.section1::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("https://assets.architecturaldesigns.com/plan_assets/358585927/large/666251RAF_Render001_1702565479.jpg") top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(1);
+  filter: blur(2px);
 
-li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #272727;
+.section1, .section2{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.section2{
+  background: #272727;
+}
+.text{
+  top:30%;
+  left: 50%;
+  position: absolute;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  color: white;
+  text-shadow: 2px 2px 5px black,
+  5px 5px 70px gray;
+  transform:scale(1,1.1) translate(-50%,10%);
 }
